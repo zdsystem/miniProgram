@@ -1,0 +1,18 @@
+@import "/wxParse/wxParse.wxss";
+#container {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.title {
+  padding: 20rpx 20rpx 40rpx;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 40rpx;
+}
+.btn {
+  padding: 40rpx 20rpx 20rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+}
+.btn image {
+  width: 100% !important;
+}

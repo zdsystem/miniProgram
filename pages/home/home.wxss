@@ -1,0 +1,80 @@
+#nav {
+  height: 90rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.search {
+  width:90rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float:left;
+}
+#nav image {
+  width: 38rpx;
+  height: 38rpx;
+}
+.menu {
+  width: 465rpx;
+  height: 90rpx;
+  border-right:1rpx solid #ddd;
+  float:left;
+  white-space: nowrap;
+}
+.menu .item {
+  height: 84rpx;
+  display: inline-block;
+  font-size: 30rpx;
+  line-height: 84rpx;
+  width:65rpx;
+  margin-right: 35rpx;
+}
+.active {
+  border-bottom: 6rpx solid #d53c3e;
+  color: #d53c3e;
+}
+.add,.profile {
+  width:97rpx;
+  height: 90rpx;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  background: #fff;
+}
+#content .item {
+  display: flex;
+  min-height: 100rpx;
+  padding: 40rpx 0;  
+  border-bottom: 1rpx solid #ddd;
+}
+#content .swipe {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+#content .item .left{
+  flex:2;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content .item .right{
+  flex:1;
+
+}
+#content .item .right image {
+  width: 100%;
+}
+.left .ref {
+  font-size: 22rpx;
+}
+.load {
+  display: flex;
+  justify-content: center;
+}
+.load image {
+  padding: 35rpx 0rpx;
+}

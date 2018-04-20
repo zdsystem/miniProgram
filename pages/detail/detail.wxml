@@ -1,0 +1,9 @@
+<import src="/wxParse/wxParse.wxml"/>
+<view id="container">
+  <view class='title'>
+    {{title}}
+  </view>
+  <view class='btn'>
+    <template is="wxParse" data="{{wxParseData:body.nodes}}"/> 
+  </view>
+</view>

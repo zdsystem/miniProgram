@@ -1,0 +1,38 @@
+<view id="container">
+  <view id="nav">
+    <view class='search'>
+      <image src='../../image/search.png'/>
+    </view>
+    <scroll-view class='menu' scroll-x>
+      <view
+      bindtap='swicher'
+      data-key="{{item.key}}"
+      data-type="{{item.type}}"
+       class="item {{item.key == current ||item.type == current? 'active' : ''}}" wx:for="{{menus}}">
+        {{item.name}}
+      </view>
+    </scroll-view>
+    <view class='add'>
+      <image src='../../image/add.png'/>
+    </view>
+    <view class='profile'>
+      <image src='../../image/profile.png'/>
+    </view>
+  </view>
+  <swiper id="content" style="height:{{height}}rpx" current-item-id='{{current}}' bindchange='change' data-key="{{item.key}}" data-type="{{item.type}}">
+    <swiper-item wx:for="{{menus}}" v-for= item-id="{{item.key}}" class="swipe">
+    <scroll-view  bindscrolltolower="bottom" enable-back-to-top="true" scroll-y style='height:100%'>
+      <navigator url='../detail/detail?id={{item.docid}}' class='item' wx:for="{{news}}">
+        <view class='left'>
+          <view class='title'>{{item.title}}</view>
+          <view class='ref'>{{item.recSource}}</view>
+        </view>
+        <view class='right'>
+          <image src='{{item.img}}' mode='widthFix'/>
+        </view>
+      </navigator>
+    <view class='load'><image src='../../image/load.gif' style='width:50rpx;height:50rpx;text-align:center'/></view>
+    </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
